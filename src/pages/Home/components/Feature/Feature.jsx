@@ -3,7 +3,6 @@ import "./Feature.scss";
 import free from "../../../../assets/img/free.png";
 import gift from "../../../../assets/img/gift.png";
 import payment from "../../../../assets/img/payment.png";
-import support from "../../../../assets/img/support.png";
 
 const Feature = () => {
   return (
