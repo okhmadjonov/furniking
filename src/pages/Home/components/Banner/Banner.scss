@@ -1,0 +1,26 @@
+.banner {
+  width: 100%;
+  height: 451px;
+  .banner__container {
+    width: 100%;
+    height: 100%;
+    max-width: 1172px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .banner__card {
+      width: 73.48%;
+      height: 97%;
+      margin-top: 12px;
+      background: linear-gradient(
+        103.4deg,
+        rgba(241, 250, 255, 0.88) 0.89%,
+        #f1faff 101.61%
+      );
+      backdrop-filter: blur(77.5px);
+      border-radius: 2px;
+    }
+  }
+}
