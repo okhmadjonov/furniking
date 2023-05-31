@@ -1,0 +1,181 @@
+.footer {
+  width: 100%;
+  height: 320px;
+  margin-top: 115px;
+  .footer__container {
+    width: 100%;
+    height: 100%;
+    max-width: 1172px;
+    margin: 0 auto;
+
+    .footer__conteiner-top {
+      width: 100%;
+      height: 270px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      //   border: 1px solid teal;
+      .footer__top-item1 {
+        width: 28%;
+        height: 100%;
+        // border: 1px solid teal;
+        .footer__logo {
+          width: 100%;
+          height: 15%;
+        }
+        .footer__subtitle {
+          width: 100%;
+          height: 42%;
+          display: flex;
+          line-height: 1.8em;
+          text-align: center;
+          align-items: center;
+          text-align: justify;
+          p {
+            font-family: "Rubik", sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px;
+            color: #555555;
+          }
+        }
+        .footer__social__links {
+          width: 40%;
+          height: 15%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+      }
+      .footer__top-item {
+        width: 20%;
+        height: 90%;
+        margin-top: -30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        .footer__item1 {
+          font-family: "Rubik", sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 40px;
+          letter-spacing: 0.01em;
+          color: #555555;
+          &:hover {
+            color: var(--accent-color);
+            transition: all 0.5s ease-in-out;
+          }
+        }
+        .footer__item {
+          font-family: "Rubik", sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 40px;
+          letter-spacing: 0.01em;
+          color: #555555;
+
+          &:hover {
+            color: var(--accent-color);
+            transition: all 0.5s ease-in-out;
+          }
+        }
+      }
+    }
+    .footer__conteiner-bottom {
+      width: 100%;
+      height: 47px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid #969696;
+
+      .allrights {
+        width: 25%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        p {
+          cursor: pointer;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          justify-content: center;
+          font-family: "Rubik", sans-serif;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 14px;
+          color: var(--main-text-color);
+          &:hover {
+            color: var(--accent-color);
+            transition: all 0.5s ease-in-out;
+          }
+        }
+      }
+      .privacy__security__terms {
+        width: 25%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        .privacy {
+          width: 33%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          justify-content: center;
+          font-family: "Rubik", sans-serif;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 14px;
+          color: var(--main-text-color);
+          &:hover {
+            color: var(--accent-color);
+            transition: all 0.5s ease-in-out;
+          }
+        }
+        .security {
+          width: 33%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          justify-content: center;
+          font-family: "Rubik", sans-serif;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 14px;
+          color: var(--main-text-color);
+          &:hover {
+            color: var(--accent-color);
+            transition: all 0.5s ease-in-out;
+          }
+        }
+        .terms {
+          width: 33%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          justify-content: center;
+          font-family: "Rubik", sans-serif;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 14px;
+          color: var(--main-text-color);
+          &:hover {
+            color: var(--accent-color);
+            transition: all 0.5s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}
