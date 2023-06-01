@@ -21,6 +21,171 @@
       );
       backdrop-filter: blur(77.5px);
       border-radius: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .card__inner {
+        width: 88%;
+        height: 380px;
+
+        .card__slide {
+          width: 100%;
+          height: 90%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .slider__description {
+            width: 40%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+
+            .green__title {
+              width: 100%;
+              // height: 10%;
+              font-family: "Rubik", sans-serif;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 22px;
+              line-height: 26px;
+              letter-spacing: 0.05em;
+              color: #7ac751;
+              margin-top: 22px;
+            }
+            .bold__title {
+              font-family: "Rubik", sans-serif;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 35px;
+              margin-top: 10px;
+              line-height: 47px;
+              color: #2f2f2f;
+              width: 100%;
+            }
+            .discount {
+              margin-top: 20px;
+              font-family: "Mulish", sans-serif;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 25px;
+              line-height: 26px;
+              color: rgba(81, 81, 81, 0.71);
+            }
+            .slide__shop__now1 {
+              margin-top: 20px;
+              width: 129px;
+              height: 40px;
+              background: var(--accent-color);
+              border-radius: 5px;
+              text-decoration: none;
+              font-family: "Mulish", sans-serif;
+              font-style: normal;
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 20px;
+              color: #ffffff;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              &:hover {
+                color: #2f2f2f;
+                transition: all 0.5s ease-in-out;
+              }
+            }
+          }
+          .slider__bigImg {
+            width: 40%;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+          .slider__imgItems {
+            width: 15%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .slider__imgItems__inner {
+              width: 98px;
+              height: 90%;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+
+              .slider__imgItems__inner-item {
+                width: 100%;
+                height: 90px;
+                background: linear-gradient(
+                  180deg,
+                  rgba(255, 255, 255, 0.6) 0%,
+                  rgba(255, 255, 255, 0.56) 100%
+                );
+                border: 2px solid #ffffff;
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                padding: 10px 0px 10px 0px;
+                img {
+                  // width: 40%;
+                  // height: 100%;
+                }
+                .green__price {
+                  width: 100%;
+                  height: 20%;
+                  font-family: "Rubik", sans-serif;
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 7px;
+                  line-height: 26px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: #7ac751;
+                }
+                .item__name {
+                  width: 100%;
+                  height: 20%;
+                  font-family: "Rubik", sans-serif;
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 7px;
+                  line-height: 26px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: #555555;
+                }
+              }
+            }
+          }
+        }
+        .card__dots {
+          width: 100%;
+          height: 10%;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+
+          .card__dot {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: rgba(122, 199, 81, 0.29);
+            &:hover {
+              background: var(--accent-color);
+              transition: all 0.5s ease-in-out;
+            }
+          }
+        }
+      }
     }
   }
 }
