@@ -16,7 +16,14 @@ const Banner = () => {
             <div className="card__slide">
               <div className="slider__description">
                 <p className="green__title">TOP COLLECTIONS 2022</p>
-                <p className="bold__title">We Serve Your Dream Furniture</p>
+                <p className="bold__title">
+                  We Serve Your Dream Furniture
+                  <img
+                    className="green__underline"
+                    src={green__underline}
+                    alt="Green UnderLine "
+                  />
+                </p>
                 <p className="discount">Get 50% off all products</p>
                 <Link className="slide__shop__now1">SHOP NOW</Link>
               </div>

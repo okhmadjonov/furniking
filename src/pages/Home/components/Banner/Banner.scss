@@ -63,6 +63,14 @@
               line-height: 47px;
               color: #2f2f2f;
               width: 100%;
+
+              position: relative;
+              .green__underline {
+                width: 50%;
+                position: absolute;
+                bottom: 0px;
+                left: 40%;
+              }
             }
             .discount {
               margin-top: 20px;
@@ -74,7 +82,7 @@
               color: rgba(81, 81, 81, 0.71);
             }
             .slide__shop__now1 {
-              margin-top: 20px;
+              margin-top: 40px;
               width: 129px;
               height: 40px;
               background: var(--accent-color);
@@ -90,7 +98,9 @@
               align-items: center;
               justify-content: center;
               &:hover {
+                border: 1px solid #eee;
                 color: #2f2f2f;
+                background-color: #fff;
                 transition: all 0.5s ease-in-out;
               }
             }
