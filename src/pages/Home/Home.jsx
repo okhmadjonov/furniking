@@ -6,6 +6,7 @@ import Offer from "./components/Offer/Offer";
 import Footer from "../../components/Footer/Footer";
 import Testimonial from "./components/Testimonials/Testimonial";
 import Blogs from "./components/Blogs/Blogs";
+import SpecialOffer from "./components/SpecialOffer/SpecialOffer";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Banner />
       <Feature />
       <Offer />
+      <SpecialOffer />
       <Testimonial />
       <Blogs />
       <Footer />
