@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "./TestiCarousel.scss";
 const TestiCarousel = (props) => {
   const { children } = props;
@@ -28,7 +29,7 @@ const TestiCarousel = (props) => {
       <div className="carousel-wrapper">
         <div className="carousel-content-wrapper">
           <button onClick={prev} className="left-arrow">
-            <BsChevronLeft />
+            <FaChevronLeft />
           </button>
           <div
             className="carousel-content"
@@ -38,7 +39,7 @@ const TestiCarousel = (props) => {
             {children}
           </div>
           <button onClick={next} className="right-arrow">
-            <BsChevronRight />
+            <FaChevronRight />
           </button>
         </div>
       </div>
