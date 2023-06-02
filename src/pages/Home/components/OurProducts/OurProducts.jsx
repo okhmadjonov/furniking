@@ -9,10 +9,10 @@ const OurProducts = () => {
           <h3>OUR PRODUCTS</h3>
         </div>
         <div className="ourproducts__sub__titles">
-          <Link className="allproducts op__item">All Products</Link>
-          <Link className="bestsellers op__item">Best Sellers</Link>
-          <Link className="newarrivals op__item">New Arrivals</Link>
-          <Link className="todaysdeals op__item">Todays Deals</Link>
+          <Link className="or__menu__allproducts op__item">All Products</Link>
+          <Link className="or__menu__bestsellers op__item">Best Sellers</Link>
+          <Link className="or__menu__newarrivals op__item">New Arrivals</Link>
+          <Link className="or__menu__todaysdeals op__item">Todays Deals</Link>
         </div>
 
         <div className="ourproducts__content-wrapper">
