@@ -1,6 +1,7 @@
 import React from "react";
 import "./OurProducts.scss";
 import { Link } from "react-router-dom";
+import AllProducts from "./AllProducts/AllProducts";
 const OurProducts = () => {
   return (
     <div className="ourproducts">
@@ -16,7 +17,9 @@ const OurProducts = () => {
         </div>
 
         <div className="ourproducts__content-wrapper">
-          <div className="ourproducts__content"></div>
+          <div className="ourproducts__content">
+            <AllProducts />
+          </div>
         </div>
       </div>
     </div>

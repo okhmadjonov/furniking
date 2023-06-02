@@ -54,7 +54,11 @@
     .ourproducts__content-wrapper {
       width: 100%;
       height: 921px;
-      border: 1px solid teal;
+
+      .ourproducts__content {
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 }
