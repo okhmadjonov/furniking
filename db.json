@@ -1,0 +1,160 @@
+{
+    "trending": [
+      { "id": 1,
+      "code":"tr",
+      "prioritet":"new",
+      "type":"CHAIR",
+      "name":"Minimal LCD chair",
+      "new_price":"180",
+      "old_price":"250",
+      "imgUrl":"https://i.ibb.co/Pj929mt/trend1.png"
+       
+     },
+     { "id": 2,
+     "code":"tr",
+     "prioritet":"new",
+     "type":"CHAIR",
+     "name":"Minimal iconic chair",
+     "new_price":"120",
+     "old_price":"150",
+     "imgUrl":"https://i.ibb.co/JFXzKJJ/trend2.png"
+      
+    },
+    { "id": 3,
+    "code":"tr",
+    "prioritet":"sale",
+    "type":"CHAIR",
+    "name":"Dining chairs",
+    "new_price":"100",
+    "old_price":"120",
+    "imgUrl":"https://i.ibb.co/Tbkp9H9/trend3.png"
+     
+   },
+   { "id": 4,
+   "code":"tr",
+   "prioritet":"sale",
+   "type":"CHAIR",
+   "name":"Buskbo armchair",
+   "new_price":"130",
+   "old_price":"150",
+   "imgUrl":"https://i.ibb.co/414k8LL/trend4.png"
+    
+  },
+  { "id": 5,
+  "code":"tr",
+  "prioritet":"sale",
+  "type":"CHAIR",
+  "name":"Modern chairs",
+  "new_price":"100",
+  "old_price":"120",
+  "imgUrl":"https://i.ibb.co/dmSy4XP/trend5.png"
+   
+ },
+ { "id": 6,
+ "code":"tr",
+ "prioritet":"sale",
+ "type":"CHAIR",
+ "name":"Plastic dining chair",
+ "new_price":"130",
+ "old_price":"150",
+ "imgUrl":"https://i.ibb.co/42kptqC/trend6.png"
+  
+},
+ { "id": 7,
+ "code":"tr",
+ "prioritet":"new",
+ "type":"CHAIR",
+ "name":"Minimal Wood chair",
+ "new_price":"180",
+ "old_price":"250",
+ "imgUrl":"https://i.ibb.co/0M8xzbG/trend7.png"
+  
+},
+{ "id": 8,
+"code":"tr",
+"prioritet":"new",
+"type":"CHAIR",
+"name":"Elegant Wood chair",
+"new_price":"120",
+"old_price":"150",
+"imgUrl":"https://i.ibb.co/j6zhdZy/trend8.png"
+ 
+}
+    ],
+    "ourproducts": [
+      
+        { "id": 1,
+        "code":"op",
+        "prioritet":"Sale",
+        "type":"CHAIR",
+        "name":"Minimal LCD chair",
+        "new_price":"180",
+        "old_price":"250",
+        "imgUrl":"https://i.ibb.co/DbqMP29/allpro1.png"
+    },
+
+    { "id": 2,
+    "code":"op",
+    "prioritet":"Sale",
+    "type":"SOFA",
+    "name":"Modern Sofa",
+    "new_price":"120",
+    "old_price":"150",
+    "imgUrl":"https://i.ibb.co/4Nwr7CZ/allpro2.png"
+},
+{ "id": 3,
+"code":"op",
+"prioritet":"-30%",
+"type":"SOFA",
+"name":"Microfiber Sofa",
+"new_price":"130",
+"old_price":"150",
+"imgUrl":"https://i.ibb.co/hsyj54B/allpro3.png"
+},
+{ "id": 4,
+"code":"op",
+"prioritet":"Sale",
+"type":"TABBLE",
+"name":"Wood Coffee Tables",
+"new_price":"100",
+"old_price":"120",
+"imgUrl":"https://i.ibb.co/Y3hJzHK/allpro4.png"
+},
+{ "id": 5,
+"code":"op",
+"prioritet":"-30%",
+"type":"CHAIR",
+"name":"Acacia Wood Club Chairs",
+"new_price":"100",
+"old_price":"120",
+"imgUrl":"https://i.ibb.co/5WXDWtH/allpro5.png"
+},
+{ "id": 6,
+"code":"op",
+"prioritet":"Sale",
+"type":"BENCH",
+"name":"Amalia Cowhide Bench",
+"new_price":"130",
+"old_price":"150",
+"imgUrl":"https://i.ibb.co/SmbQntF/allpro6.png"
+},
+{ "id": 7,
+"code":"op",
+"prioritet":"New",
+"type":"STORAGE",
+"name":"Juno-Higed Lid Storage",
+"new_price":"180",
+"old_price":"250",
+"imgUrl":"https://i.ibb.co/vhHvNps/allpro7.png"
+},
+{ "id": 8,
+"code":"op",
+"prioritet":"New",
+"type":"FURNITURE",
+"name":"Delicia 3 Piece Living Room",
+"new_price":"120",
+"old_price":"150",
+"imgUrl":"https://i.ibb.co/N63Vy2G/allpro8.png"
+}
+ ]   
+}
