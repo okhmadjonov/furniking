@@ -185,6 +185,10 @@
             justify-content: center;
             font-size: 24px;
             color: #555;
+            &:hover {
+              color: var(--accent-color);
+              transition: all 0.5s ease-in-out;
+            }
 
             .bag__products {
               width: 15px;
@@ -214,6 +218,10 @@
             justify-content: center;
             font-size: 24px;
             color: #555;
+            &:hover {
+              color: var(--accent-color);
+              transition: all 0.5s ease-in-out;
+            }
           }
           .user {
             width: 33.3%;
@@ -223,6 +231,11 @@
             justify-content: center;
             font-size: 24px;
             color: #555;
+
+            &:hover {
+              color: var(--accent-color);
+              transition: all 0.5s ease-in-out;
+            }
           }
         }
       }
