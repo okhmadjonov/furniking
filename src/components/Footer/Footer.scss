@@ -47,6 +47,31 @@
           align-items: center;
           cursor: pointer;
           justify-content: space-between;
+          .facebook {
+            &:hover {
+              color: #3b5998;
+              transition: all 0.5s ease-in-out;
+            }
+          }
+          .twitter {
+            &:hover {
+              color: #00acee;
+              transition: all 0.5s ease-in-out;
+            }
+          }
+          .instagram {
+            &:hover {
+              color: #c8232c;
+              transition: all 0.5s ease-in-out;
+            }
+          }
+
+          .pinterest {
+            &:hover {
+              color: #cd486b;
+              transition: all 0.5s ease-in-out;
+            }
+          }
         }
       }
       .footer__top-item {

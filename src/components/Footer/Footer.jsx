@@ -24,10 +24,10 @@ const Footer = () => {
               </p>
             </div>
             <div className="footer__social__links">
-              <FaFacebookF />
-              <FaTwitter />
-              <AiFillInstagram />
-              <TiSocialPinterest />
+              <FaFacebookF className="facebook" />
+              <FaTwitter className="twitter" />
+              <AiFillInstagram className="instagram" />
+              <TiSocialPinterest className="pinterest" />
             </div>
           </div>
           <div className="footer__top-item">
