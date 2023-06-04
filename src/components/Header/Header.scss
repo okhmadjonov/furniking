@@ -378,6 +378,10 @@
               font-size: 14px;
               line-height: 17px;
               color: #555555;
+              &:hover {
+                transition: all 0.3s ease-in-out;
+                color: var(--accent-color);
+              }
             }
           }
         }
