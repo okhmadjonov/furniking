@@ -95,7 +95,7 @@
 
     { "id": 2,
     "code":"op",
-    "prioritet":"Sale",
+    "prioritet":"New",
     "type":"SOFA",
     "name":"Modern Sofa",
     "new_price":"120",

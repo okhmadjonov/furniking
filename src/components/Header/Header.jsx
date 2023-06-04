@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import classNames from "classnames";
 
-import { BsHandbag } from "react-icons/bs";
+import { BsHandbag, BsBag } from "react-icons/bs";
 import { BiBell, BiUser } from "react-icons/bi";
 import "./Header.scss";
 import logo from "../../assets/img/logo.png";
 import { FiSearch } from "react-icons/fi";
 
 const Header = () => {
+  const [productItems, setProductItems] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
   const handleOpenCollections = () => {
     setIsOpen((current) => !current);
@@ -64,7 +65,8 @@ const Header = () => {
             </div>
             <div className="bag__bell__user">
               <Link className="bag">
-                <BsHandbag />
+                <BsBag />
+                <span className="bag__products">{productItems}</span>
               </Link>
               <Link className="bell">
                 <BiBell />

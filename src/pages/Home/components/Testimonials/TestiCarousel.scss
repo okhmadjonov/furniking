@@ -24,6 +24,11 @@
       font-size: 32px;
       color: #bdbcbc;
       background: none;
+
+      &:hover {
+        transition: all 0.5s ease-in-out;
+        color: var(--accent-color);
+      }
     }
 
     .left-arrow {

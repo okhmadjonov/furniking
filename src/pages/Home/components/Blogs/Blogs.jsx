@@ -42,7 +42,7 @@ const Blogs = () => {
                 <p>
                   <span className="name">
                     {" "}
-                    <BsTag /> FURNITURE
+                    <BsTag /> TABLE
                   </span>
                   <span className="date">23 September 2022</span>
                 </p>
@@ -62,7 +62,7 @@ const Blogs = () => {
                 <p>
                   <span className="name">
                     {" "}
-                    <BsTag /> FURNITURE
+                    <BsTag /> BENCH
                   </span>
                   <span className="date">23 September 2022</span>
                 </p>
@@ -82,7 +82,7 @@ const Blogs = () => {
                 <p>
                   <span className="name">
                     {" "}
-                    <BsTag /> FURNITURE
+                    <BsTag /> CHAIR
                   </span>
                   <span className="date">23 September 2022</span>
                 </p>

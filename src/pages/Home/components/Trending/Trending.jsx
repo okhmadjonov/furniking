@@ -10,7 +10,9 @@ const Trending = () => {
           <h3>TRENDING</h3>
         </div>
         <div className="sub__product__titles">
-          <Link className="menu__topproducts trend__item">Top Products</Link>
+          <Link className="menu__topproducts trend__item trend__active">
+            Top Products
+          </Link>
           <Link className="menu__newarrivals trend__item">New Arrivals</Link>
           <Link className="menu__bestsellers trend__item">Best Sellers</Link>
         </div>

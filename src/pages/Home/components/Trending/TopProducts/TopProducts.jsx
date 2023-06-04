@@ -49,7 +49,18 @@ export const Products = () => {
               backgroundImage: `url(${item.imgUrl})`,
             }}>
             <div className="product__prioritet">
-              <p className="prioritet">{item.prioritet}</p>
+              <p
+                className={
+                  item.prioritet === "New"
+                    ? "prioritet"
+                    : item.prioritet === "Sale"
+                    ? "prioritet__green"
+                    : item.prioritet === "-30%"
+                    ? "prioritet__red"
+                    : "prioritet"
+                }>
+                {item.prioritet}
+              </p>
             </div>
             <div className="product__hover__items">
               <div className="hover__item heart">

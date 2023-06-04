@@ -10,7 +10,9 @@ const OurProducts = () => {
           <h3>OUR PRODUCTS</h3>
         </div>
         <div className="ourproducts__sub__titles">
-          <Link className="or__menu__allproducts op__item">All Products</Link>
+          <Link className="or__menu__allproducts op__item op__active">
+            All Products
+          </Link>
           <Link className="or__menu__bestsellers op__item">Best Sellers</Link>
           <Link className="or__menu__newarrivals op__item">New Arrivals</Link>
           <Link className="or__menu__todaysdeals op__item">Todays Deals</Link>

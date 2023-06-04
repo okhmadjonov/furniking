@@ -169,7 +169,7 @@
           }
         }
         .bag__bell__user {
-          width: 125px;
+          width: 130px;
           height: 100%;
           display: flex;
           color: #555;
@@ -177,17 +177,38 @@
           justify-content: space-between;
 
           .bag {
-            width: 24px;
-            height: 24px;
+            position: relative;
+            width: 33.4%;
+            height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 24px;
             color: #555;
+
+            .bag__products {
+              width: 15px;
+              height: 15px;
+              border-radius: 50%;
+              color: #fff;
+              background-color: var(--accent-color);
+              font-family: "Rubik";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 7px;
+              line-height: 8px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: #ffffff;
+              position: absolute;
+              right: 0px;
+              top: 30px;
+            }
           }
           .bell {
-            width: 24px;
-            height: 24px;
+            width: 33.3%;
+            height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -195,8 +216,8 @@
             color: #555;
           }
           .user {
-            width: 24px;
-            height: 24px;
+            width: 33.3%;
+            height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
