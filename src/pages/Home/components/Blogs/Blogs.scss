@@ -76,6 +76,7 @@
               letter-spacing: 0.008em;
               color: #ffffff;
               .name {
+                cursor: pointer;
                 width: 25%;
                 height: 20px;
                 background-color: #fff;
@@ -87,6 +88,11 @@
                 gap: 10px;
                 padding-top: 2px;
                 color: var(--accent-color);
+                &:hover {
+                  transition: all 0.5s ease-in-out;
+                  color: #fff;
+                  background-color: var(--accent-color);
+                }
               }
             }
           }
