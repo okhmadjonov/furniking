@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import "./Allproducts.scss";
+import { BsStar, BsHeart, BsBagPlus, BsEye } from "react-icons/bs";
+import { RxUpdate } from "react-icons/rx";
 import { Link } from "react-router-dom";
 import {
   BsArrowRightShort,
@@ -63,17 +65,62 @@ export const AllSingleProduct = () => {
   return (
     <div className="products__container">
       {allProducts?.map((item, index) => (
+        // <div className="product" key={index}>
+        //   <div
+        //     className="product__img"
+        //     style={{
+        //       backgroundImage: `url(${item.imgUrl})`,
+        //     }}></div>
+        //   {/* <div className="product__type"></div> */}
+        //   <div className="product__name">
+        //     <h3>{item.name}</h3>
+        //   </div>
+        //   <div className="product__price__stars"></div>
+        // </div>
+
         <div className="product" key={index}>
           <div
             className="product__img"
             style={{
               backgroundImage: `url(${item.imgUrl})`,
-            }}></div>
-          {/* <div className="product__type"></div> */}
+            }}>
+            <div className="product__prioritet">
+              <p className="prioritet">{item.prioritet}</p>
+            </div>
+            <div className="product__hover__items">
+              <div className="hover__item heart">
+                <BsHeart />
+              </div>
+              <div className="hover__item bag">
+                <BsBagPlus />
+              </div>
+              <div className="hover__item update">
+                <RxUpdate />
+              </div>
+
+              <div className="hover__item eye">
+                <BsEye />
+              </div>
+            </div>
+          </div>
+
           <div className="product__name">
+            <p>{item.type}</p>
             <h3>{item.name}</h3>
           </div>
-          <div className="product__price__stars"></div>
+          <div className="product__price__stars">
+            <div className="new__old__price">
+              <p className="new_p">${item.new_price}</p>
+              <p className="old_p">${item.old_price}</p>
+            </div>
+            <div className="stars">
+              <BsStar />
+              <BsStar />
+              <BsStar />
+              <BsStar />
+              <BsStar />
+            </div>
+          </div>
         </div>
       ))}
     </div>
