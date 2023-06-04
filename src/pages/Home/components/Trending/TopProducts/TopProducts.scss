@@ -69,7 +69,11 @@
   .product {
     width: 270px;
     height: 387px;
-    border: 1px solid black;
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    // border: 1px solid black;
 
     .product__img {
       width: 100%;
@@ -77,6 +81,177 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .product__prioritet {
+        width: 100%;
+        height: 30px;
+
+        .prioritet {
+          width: 50px;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #00b7f1;
+          border-radius: 0px 0px 5px 0px;
+          // opacity: 0;
+          font-family: "Mulish";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 130%;
+          /* or 16px */
+
+          text-align: center;
+          letter-spacing: 0.008em;
+
+          color: #ffffff;
+        }
+      }
+      .product__hover__items {
+        opacity: 0;
+        position: relative;
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 10px;
+
+        .hover__item {
+          position: absolute;
+          right: 0;
+          color: #757575;
+          width: 38px;
+          height: 38px;
+          cursor: pointer;
+          float: right;
+          background: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          box-shadow: 0px 2px 33px rgba(0, 0, 0, 0.09);
+
+          &:hover {
+            background-color: var(--accent-color);
+            color: #fff;
+            transition: all 0.5s ease-in-out;
+          }
+        }
+        .heart {
+          top: 0px;
+        }
+        .bag {
+          top: 50px;
+        }
+        .update {
+          top: 100px;
+          transform: rotate(90deg);
+        }
+        .eye {
+          top: 150px;
+        }
+      }
+    }
+
+    .product__name {
+      width: 100%;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      p {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        font-family: "Mulish";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 130%;
+        letter-spacing: 0.008em;
+        text-transform: uppercase;
+        color: rgba(117, 117, 117, 0.71);
+      }
+      h3 {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        font-family: "Rubik", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 120%;
+        letter-spacing: 0.005em;
+        color: #555555;
+      }
+    }
+
+    .product__price__stars {
+      width: 100%;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .new__old__price {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 15px;
+
+        .new_p {
+          font-family: "Mulish";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 120%;
+
+          text-align: center;
+          letter-spacing: 0.005em;
+
+          color: #7ac751;
+        }
+        .old_p {
+          font-family: "Mulish";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 120%;
+
+          text-align: center;
+          letter-spacing: 0.005em;
+          text-decoration-line: line-through;
+
+          color: #cccccc;
+        }
+      }
+      .stars {
+        cursor: pointer;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 2px;
+
+        color: var(--accent-color);
+      }
+    }
+
+    &:hover {
+      transition: all 0.5s ease-in-out;
+      .product__hover__items {
+        opacity: 1;
+      }
     }
   }
 }
