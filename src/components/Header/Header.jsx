@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import classNames from "classnames";
 
 import { BsHandbag, BsBag } from "react-icons/bs";
@@ -7,13 +7,15 @@ import { BiBell, BiUser } from "react-icons/bi";
 import "./Header.scss";
 import logo from "../../assets/img/logo.png";
 import { FiSearch } from "react-icons/fi";
+import { useSelector } from "react-redux";
 
 const Header = () => {
-  const [productItems, setProductItems] = useState(0);
-  const [isOpen, setIsOpen] = useState(false);
+  const { korzinka } = useSelector((state) => state.persistedReducer);
+  const [isOpen, setIsOpen] = useState(true);
   const handleOpenCollections = () => {
     setIsOpen((current) => !current);
   };
+
   return (
     <div className="header">
       <div className="header__container">
@@ -64,9 +66,13 @@ const Header = () => {
               </Link>
             </div>
             <div className="bag__bell__user">
-              <Link className="bag">
+              <Link
+                className="bag"
+                to="/card"
+                // onClick={() => Navigate("/cart")}
+              >
                 <BsBag />
-                <span className="bag__products">{productItems}</span>
+                <span className="bag__products">{korzinka.length}</span>
               </Link>
               <Link className="bell">
                 <BiBell />

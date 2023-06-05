@@ -10,6 +10,7 @@ import {
 } from "react-icons/bs";
 import { useDispatch, useSelector } from "react-redux";
 import { getAllProducts } from "../../../../../reduxToolkit/products/extraReducer";
+import { addToCart } from "../../../../../reduxToolkit/products/productsSlice";
 const AllProducts = () => {
   return (
     <div className="allproducts">
@@ -52,32 +53,18 @@ export default AllProducts;
 
 export const AllSingleProduct = () => {
   const dispatch = useDispatch();
-  const { allProducts } = useSelector((state) => state.products);
+  const { allProducts } = useSelector((state) => state.persistedReducer);
+  const { korzinka } = useSelector((state) => state.persistedReducer);
 
   useEffect(() => {
     dispatch(getAllProducts());
   }, []);
-
-  if (allProducts.length === 0) {
-    return null;
-  }
+  const { id, type, prioritet, imgUrl, name, new_price, old_price } =
+    allProducts;
 
   return (
     <div className="products__container">
       {allProducts?.map((item, index) => (
-        // <div className="product" key={index}>
-        //   <div
-        //     className="product__img"
-        //     style={{
-        //       backgroundImage: `url(${item.imgUrl})`,
-        //     }}></div>
-        //   {/* <div className="product__type"></div> */}
-        //   <div className="product__name">
-        //     <h3>{item.name}</h3>
-        //   </div>
-        //   <div className="product__price__stars"></div>
-        // </div>
-
         <div className="product" key={index}>
           <div
             className="product__img"
@@ -102,7 +89,21 @@ export const AllSingleProduct = () => {
               <div className="hover__item heart">
                 <BsHeart />
               </div>
-              <div className="hover__item bag">
+              <div
+                className="hover__item bag"
+                onClick={() =>
+                  dispatch(
+                    addToCart({
+                      id,
+                      type,
+                      imgUrl,
+                      name,
+                      prioritet,
+                      new_price,
+                      old_price,
+                    })
+                  )
+                }>
                 <BsBagPlus />
               </div>
               <div className="hover__item update">

@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./TopProducts.scss";
+import { addToCart } from "../../../../../reduxToolkit/products/productsSlice";
 import { BsStar, BsHeart, BsBagPlus, BsEye } from "react-icons/bs";
 import { RxUpdate } from "react-icons/rx";
 import { useDispatch, useSelector } from "react-redux";
@@ -28,17 +29,23 @@ export default TopProducts;
 
 export const Products = () => {
   const dispatch = useDispatch();
-  const { trendProductsData } = useSelector((state) => state.products);
+  // const { cart } = useSelector((state) => state.products);
+  const { trendProductsData } = useSelector((state) => state.persistedReducer);
+  const { korzinka } = useSelector((state) => state.persistedReducer);
 
   useEffect(() => {
     dispatch(getAllTrends());
   }, []);
 
+  const handleAdd = (el) => {
+    // console.log(el);
+    dispatch(addToCart(el));
+  };
+
   if (trendProductsData.length === 0) {
     return null;
   }
 
-  console.log(trendProductsData);
   return (
     <div className="products__container">
       {trendProductsData?.map((item, index) => (
@@ -66,7 +73,7 @@ export const Products = () => {
               <div className="hover__item heart">
                 <BsHeart />
               </div>
-              <div className="hover__item bag">
+              <div className="hover__item bag" onClick={() => handleAdd(item)}>
                 <BsBagPlus />
               </div>
               <div className="hover__item update">
