@@ -59,8 +59,14 @@ export const AllSingleProduct = () => {
   useEffect(() => {
     dispatch(getAllProducts());
   }, []);
-  const { id, type, prioritet, imgUrl, name, new_price, old_price } =
-    allProducts;
+
+  const handleAdd = (el) => {
+    dispatch(addToCart(el));
+  };
+
+  if (allProducts.length === 0) {
+    return null;
+  }
 
   return (
     <div className="products__container">
@@ -89,21 +95,7 @@ export const AllSingleProduct = () => {
               <div className="hover__item heart">
                 <BsHeart />
               </div>
-              <div
-                className="hover__item bag"
-                onClick={() =>
-                  dispatch(
-                    addToCart({
-                      id,
-                      type,
-                      imgUrl,
-                      name,
-                      prioritet,
-                      new_price,
-                      old_price,
-                    })
-                  )
-                }>
+              <div className="hover__item bag" onClick={() => handleAdd(item)}>
                 <BsBagPlus />
               </div>
               <div className="hover__item update">
